@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GRADE</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the number" id="inp1">
+    <button id="bt1" onclick="grade()">CLICK HERE</button>
+    <script>
+        function grade(){
+        let score= document.getElementById("inp1").value;
+        console.log(score);
+        if(score>=90){
+            alert("GRADE A")
+        }
+        else if(score<90 && score<=75){
+            alert("GRADE B")
+        }
+        else{
+            alert("GRADE C")
+        }
+
+        }
+    </script>
+    
+</body>
+</html>

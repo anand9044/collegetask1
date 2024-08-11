@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        #container{
+            display: flex;
+            margin: auto;
+            height: 300px;
+            width: 200px;
+            border: 3px solid;
+            flex: auto;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            justify-content: center;
+        }
+        .box{
+            height: 40px;
+            width: 40px;
+            margin: 5px;
+            text-align: center;
+            border: 3px solid rgb(108, 96, 96);
+            border-radius: 5px;
+        }
+        input{
+            height: 40px;
+            width: 100%;
+            margin: 5px;
+            border~width: 2px;
+        }
+        .text{
+            background-color: lightsteelblue ;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>CALCULATOR</h3>
+    <div id="container">
+       <input type="text" class="text" id="txt1">
+       <button id="bt1" class="box" onclick="calfunction('1')">1</button>
+       <button id="bt2" class="box"onclick="calfunction('2')">2</button>
+       <button id="bt3" class="box"onclick="calfunction('3')">3</button>
+       <button id="btsub" class="box"onclick="calfunction('+')">+</button>
+       <button id="bt4" class="box"onclick="calfunction('4')">4</button>
+       <button id="bt5" class="box"onclick="calfunction('5')">5</button>
+       <button id="bt6" class="box"onclick="calfunction('6')">6</button>
+       <button id="bt7" class="box"onclick="calfunction('7')">7</button>
+       <button id="bt8" class="box"onclick="calfunction('8')">8</button>
+       <button id="bt9" class="box"onclick="calfunction('9')">9</button>
+       <button id="btq" class="box"onclick="calfunction('*')">*</button>
+       <button id="bts" class="box"onclick="clearInput('C')">C</button>
+       <button id="btsub" class="box"onclick="calfunction('0')">0</button>
+       <button id="btm" class="box"onclick="calculate('=')">=</button>
+       <button id="btd" class="box"onclick="calfunction('/')">/</button>
+    </div>   
+    <script>
+          let num ="";
+            function calfunction (num)
+            {
+            let textval =document.getElementById("txt1").value ;
+            num = textval + num;
+           document.getElementById("txt1").value = num;
+            }
+            function clearInput() {
+                let inputField = document.getElementById("txt1");
+                inputField.value = "";
+            }
+            function calculate() {
+                let result;
+                let str =document.getElementById("txt1").value ;
+                console.log(str);
+                result = eval(str);
+                console.log(result);
+                document.getElementById("txt1").value = result ;
+    
+             }
+
+    </script>
+</body>
+</html>

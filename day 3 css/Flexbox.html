@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 500px;
+            width: 600px;
+            margin-top: 5px;
+            background-color: rgb(159, 159, 152);
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            /* distance ko maintain krta wrap the content as per the size */
+            justify-content: space-around;
+        /* justify space kitna chodna wo btata hai */
+        align-items: center;
+        /* align item cross axis ke around daal dega */
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            margin-top: 5px;
+           background-color: yellow;
+             border: 4px solid rebeccapurple;
+        }
+
+  #bx1{
+    background-color: yellow;
+   }
+   #bx2
+    {
+        background-color: aqua;
+    }
+   #bx3{
+    background-color: rgb(14, 16, 15);
+   }
+   #bx4{
+    background-color: rgb(59, 54, 57);
+   }
+    </style>
+</head>
+
+<body>
+    <!-- Flexbos Direction is used for 1D layout method for horizontal or vertical(display:flex)
+    consist two thing container(main axis and cross axis) 
+     flexbox direction  (flex direction: row-reverse)
+    The element in the flex bos shrink there size and does not go out of container  -->
+    <div id="container">
+     <div id="bx1" class="box">Box1</div>
+     <div id="bx2" class="box">Box2</div>
+     <div id="bx1"class="box">Box3</div>
+     <div id="bx2"class="box">Box4</div>
+
+    </div>
+</body>
+</html>

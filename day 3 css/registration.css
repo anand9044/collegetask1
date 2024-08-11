@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN-UP FORM</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+         input[type=text] {
+         width: 80%;
+         padding: 12px 20px;
+         margin: 8px;
+         box-sizing: border-box;
+        }
+        input[type=email]{
+         width: 80%;
+         padding: 12px 20px;
+         margin: 8px;
+         box-sizing: border-box;
+        }
+        input[type=password] {
+         width: 80%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         box-sizing: border-box;
+        }
+        input[type=tel] {
+         width: 75%;
+         padding: 12px 20px;
+         margin: 8px 0;
+        }
+        input:hover {
+        background-color:beige;
+        }
+        #container{
+            
+            height: 750px;
+            width: 700px;
+            padding: 50px;
+            margin: auto;
+            border: 2px solid black;
+            background-color: aliceblue; 
+        }
+        #email.hover{
+            background-color: blanchedalmond;
+        }
+        #password.hover{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        SING-UP FORM
+    </h1>
+    <form>
+        <div id="container">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" ><br><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="gender">GENDER</label><br>
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label><br>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label><br><br>
+        <label for="DOB">DOB</label><br>
+        <input type="date" id="DOB" name="DOB"><br><br>
+        <label for="qual">Higher Qualification</label><br>
+        <input type="checkbox" id="qual" name="qual" value="post Graduation">
+        <label for="qual">post graduation</label><br>
+        <input type="checkbox" id="qual" name="qual" value="Graduation">
+        <label for="qual">Graduation</label><br>
+        <input type="checkbox" id="qual" name="qual" value="12">
+        <label for="qual">12</label><br>
+        </div>
+    </form>
+    
+</body>
+</html>

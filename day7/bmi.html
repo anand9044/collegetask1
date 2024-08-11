@@ -1,0 +1,33 @@
+<!-- Determine BMIage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMI</title>
+</head>
+<body>
+    <script>
+        function bodyindes()
+        let weight =prompt("enter a weight in kg");
+        let height =prompt("enter a height m");
+        bmi = weight/(height*height);
+        let bmi= document.getElementById("inp1").value;
+        console.log(bmi);
+    if(bmi<18.5)
+     {
+       alert("Underweight");
+     }
+    else if(bmi<24.9)
+     {
+       alert("Normal weight");
+     }
+     else if(bmi<29.9)
+     {
+       alert("over weight");
+     }
+     else 
+     {
+       alert("overweight");
+     }
+    </script>    
+</body>
+</html>

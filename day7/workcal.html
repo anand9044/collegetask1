@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+</head>
+<body>
+       <input type="text" id="txt1" ><br>
+       <button id="bt1" class="box" onclick="oddeven('1')">1</button><br>
+       <button id="bt2" class="box" onclick="oddeven('2')">2</button><br>
+       <!-- <button id="bt3" class="box" onclick="oddeven('3')">3</button><br>
+       <button id="bt4" class="box" onclick="oddeven('4')">4</button><br>
+       <button id="bt5" class="box" onclick="oddeven('5')">5</button><br>
+       <button id="bt6" class="box" onclick="oddeven('6')">6</button><br>
+       <button id="bt7" class="box" onclick="oddeven('7')">7</button><br>
+       <button id="bt8" class="box" onclick="oddeven('8')">8</button><br>
+       <button id="bt9" class="box" onclick="oddeven('9')">9</button><br>
+       <button id="btq" class="box" onclick="oddeven('q')">*</button><br>
+       <button id="bts" class="box" onclick="oddeven('s')">C</button><br>
+       <button id="btsub" class="box" onclick="oddeven('sub')">0</button><br> -->
+       <button id="bt+" class="box" onclick="calculate('=')">=</button><br>
+       <button id="bt=" class="box" onclick="oddeven('+')">+</button><br>
+       <!-- <button id="btd" class="box" onclick="oddeven('d')">/</button><br> -->
+      
+        <script>
+    
+            let num ="";
+         function oddeven(num)
+         {
+            let textval =document.getElementById("txt1").value ;
+            num = textval + num;
+           document.getElementById("txt1").value = num;
+         }
+
+         function calculate() {
+            let result;
+            let str =document.getElementById("txt1").value ;
+            console.log(str);
+            result = eval(str);
+            console.log(result);
+            document.getElementById("txt1").value = result ;
+
+         }
+           </script>
+</body>
+</html>
